@@ -9,6 +9,8 @@ npx -y pnpm@10 install
 DATABASE_PROVIDER=sqlite \
 DATABASE_URL=file:data/local.db \
 AUTH_SECRET=local-dev-secret \
+PUBLIC_SITE_ONLY=false \
+EMAIL_AUTH_ENABLED=false \
 NEXT_PUBLIC_APP_URL=http://127.0.0.1:3007 \
 AUTH_URL=http://127.0.0.1:3007 \
 node node_modules/next/dist/bin/next dev --turbopack -p 3007 -H 0.0.0.0

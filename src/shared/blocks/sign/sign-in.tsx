@@ -37,13 +37,8 @@ export function SignIn({
   const [email, setEmail] = useState(defaultEmail || '');
   const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
-  const [rememberMe, setRememberMe] = useState(false);
 
-  const isGoogleAuthEnabled = configs.google_auth_enabled === 'true';
-  const isGithubAuthEnabled = configs.github_auth_enabled === 'true';
-  const isEmailAuthEnabled =
-    configs.email_auth_enabled !== 'false' ||
-    (!isGoogleAuthEnabled && !isGithubAuthEnabled); // no social providers enabled, auto enable email auth
+  const isEmailAuthEnabled = configs.email_auth_enabled === 'true';
 
   if (callbackUrl) {
     if (
@@ -86,13 +81,13 @@ export function SignIn({
           callbackURL: callbackUrl,
         },
         {
-          onRequest: (ctx) => {
+          onRequest: () => {
             // loading is already set above; keep as no-op for safety
           },
-          onResponse: (ctx) => {
+          onResponse: () => {
             // Do NOT reset loading here; navigation may not have completed yet.
           },
-          onSuccess: (ctx) => {
+          onSuccess: () => {
             // Keep loading=true until navigation completes.
           },
           onError: (e: any) => {

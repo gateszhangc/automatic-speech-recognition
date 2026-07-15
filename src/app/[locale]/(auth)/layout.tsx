@@ -22,7 +22,7 @@ export default function AuthLayout({
             },
             url: '/',
             target: '_self',
-            className: '',
+            className: '[&>span]:hidden sm:[&>span]:inline',
           }}
         />
       </div>

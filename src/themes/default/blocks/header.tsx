@@ -86,7 +86,7 @@ export function Header({ header }: { header: HeaderType }) {
         viewport={false}
         className="**:data-[slot=navigation-menu-content]:top-10 max-lg:hidden"
       >
-        <NavigationMenuList className="gap-2">
+        <NavigationMenuList className="gap-0">
           {header.nav?.items?.map((item, idx) => {
             if (!item.children || item.children.length === 0) {
               return (
@@ -94,13 +94,18 @@ export function Header({ header }: { header: HeaderType }) {
                   <Link
                     href={item.url || ''}
                     target={item.target || '_self'}
-                    className={`flex flex-row items-center gap-2 px-4 py-1.5 text-sm ${
+                    className={`flex flex-row items-center gap-1.5 px-2.5 py-1.5 text-sm ${
                       item.is_active || pathname.endsWith(item.url as string)
                         ? 'bg-muted/40 text-muted-foreground'
                         : ''
                     }`}
                   >
-                    {item.icon && <SmartIcon name={item.icon as string} />}
+                    {item.icon && (
+                      <SmartIcon
+                        name={item.icon as string}
+                        className="hidden size-4 2xl:block"
+                      />
+                    )}
                     {item.title}
                   </Link>
                 </NavigationMenuLink>
@@ -261,7 +266,7 @@ export function Header({ header }: { header: HeaderType }) {
         >
           <div className="container">
             <div className="relative flex flex-wrap items-center justify-between lg:py-5">
-              <div className="flex justify-between gap-8 max-lg:h-14 max-lg:w-full max-lg:border-b">
+              <div className="flex justify-between gap-4 max-lg:h-14 max-lg:w-full max-lg:border-b">
                 {/* Brand Logo */}
                 {header.brand && <BrandLogo brand={header.brand} />}
 
@@ -286,8 +291,8 @@ export function Header({ header }: { header: HeaderType }) {
               )}
 
               {/* Header right section: theme toggler, locale selector, sign, buttons */}
-              <div className="mb-6 hidden w-full flex-wrap items-center justify-end space-y-8 in-data-[state=active]:flex max-lg:in-data-[state=active]:mt-6 md:flex-nowrap lg:m-0 lg:flex lg:w-fit lg:gap-6 lg:space-y-0 lg:border-transparent lg:bg-transparent lg:p-0 lg:shadow-none dark:shadow-none dark:lg:bg-transparent">
-                <div className="flex w-full flex-row items-center gap-4 sm:flex-row sm:gap-6 sm:space-y-0 md:w-fit">
+              <div className="mb-6 hidden w-full flex-wrap items-center justify-end space-y-8 in-data-[state=active]:flex max-lg:in-data-[state=active]:mt-6 md:flex-nowrap lg:m-0 lg:flex lg:w-fit lg:gap-3 lg:space-y-0 lg:border-transparent lg:bg-transparent lg:p-0 lg:shadow-none dark:shadow-none dark:lg:bg-transparent">
+                <div className="flex w-full flex-row items-center gap-3 sm:flex-row sm:space-y-0 md:w-fit">
                   {header.buttons &&
                     header.buttons.map((button, idx) => (
                       <Link

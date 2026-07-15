@@ -20,7 +20,7 @@ export const envConfigs: ConfigMap = {
   theme: process.env.NEXT_PUBLIC_THEME ?? 'default',
   appearance: process.env.NEXT_PUBLIC_APPEARANCE ?? 'light',
   locale: process.env.NEXT_PUBLIC_DEFAULT_LOCALE ?? 'en',
-  public_site_only: process.env.PUBLIC_SITE_ONLY ?? 'true',
+  public_site_only: process.env.PUBLIC_SITE_ONLY ?? 'false',
   database_url: process.env.DATABASE_URL ?? '',
   database_auth_token: process.env.DATABASE_AUTH_TOKEN ?? '',
   database_provider: process.env.DATABASE_PROVIDER ?? 'postgresql',

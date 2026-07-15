@@ -1,59 +1,74 @@
 {
   "metadata": {
-    "title": "ASR 实施路径",
-    "description": "比较自动语音识别在试点、生产工作流和合规敏感转写中的实际实施路径。"
+    "title": "自动语音识别价格 | 免费测试版",
+    "description": "比较免费 ASR 工作流规划器与团队定制落地方案的价格。使用 Google 登录即可从 0 美元开始。"
   },
   "messages": {
     "current_plan": "当前方案",
     "processing": "处理中"
   },
-  "page": {
-    "title": "ASR 实施路径",
-    "show_sections": ["options", "cta"],
-    "sections": {
-      "options": {
-        "block": "features",
-        "id": "implementation-options",
-        "title": "选择 ASR 实施路径",
-        "description": "合适路径取决于音频量、延迟、隐私、说话人复杂度和团队可承担的复核量。",
-        "items": [
-          {
-            "title": "试点基准",
-            "description": "创建代表性音频集，测试词错误率、说话人分离、领域词汇和复核成本，再选择模型或供应商。",
-            "icon": "FlaskConical"
-          },
-          {
-            "title": "工作流集成",
-            "description": "把 ASR 输出接入字幕、CRM 记录、QA 队列、搜索索引、分析或知识管理系统。",
-            "icon": "Workflow"
-          },
-          {
-            "title": "合规管线",
-            "description": "为敏感音频加入留存策略、PII 脱敏、访问控制、审计日志和人工复核规则。",
-            "icon": "ShieldCheck"
-          }
-        ]
+  "content": {
+    "eyebrow": "清晰定价",
+    "title": "自动语音识别价格",
+    "description": "免费使用工作流规划器。明确音频量、准确率目标、集成和治理要求后，再进入团队定制落地。",
+    "plans": [
+      {
+        "name": "免费测试版",
+        "description": "适合在选择模型、API 或供应商前评估 ASR 工作流的个人。",
+        "price": "$0",
+        "unit": "测试期间",
+        "note": "无需银行卡，仅提供 Google 登录。",
+        "featuresTitle": "包含内容",
+        "features": [
+          "交互式工作流规模规划器",
+          "准确率、延迟和复核检查点",
+          "ASR 实施指南与文档",
+          "中文和英文界面"
+        ],
+        "button": {
+          "title": "免费登录",
+          "url": "/sign-in?callbackUrl=/"
+        },
+        "featured": true
       },
-      "cta": {
-        "block": "cta",
-        "id": "pricing-cta",
-        "title": "先从工作流估算开始",
-        "description": "使用 ASR 规划器估算识别、复核和导出要求，再决定实施路径。",
-        "buttons": [
-          {
-            "title": "打开规划器",
-            "url": "/#planner",
-            "icon": "SlidersHorizontal",
-            "variant": "default"
-          },
-          {
-            "title": "联系",
-            "url": "mailto:support@automatic-speech-recognition.homes",
-            "icon": "Mail",
-            "variant": "outline"
-          }
-        ]
+      {
+        "name": "团队落地",
+        "description": "适合把基准测试转成生产级转写或语音工作流的团队。",
+        "price": "定制",
+        "unit": "按范围报价",
+        "note": "范围取决于音频量、集成、复核成本和安全要求。",
+        "featuresTitle": "规划范围",
+        "features": [
+          "代表性音频基准测试设计",
+          "模型与供应商评估标准",
+          "集成与导出架构",
+          "留存、隐私和人工复核方案"
+        ],
+        "button": {
+          "title": "估算工作流",
+          "url": "/#planner"
+        }
       }
-    }
+    ],
+    "factsTitle": "价格说明",
+    "facts": [
+      {
+        "label": "免费测试版费用",
+        "value": "$0"
+      },
+      {
+        "label": "支付信息",
+        "value": "无需提供"
+      },
+      {
+        "label": "团队价格",
+        "value": "完成工作流估算后报价"
+      },
+      {
+        "label": "付费结账",
+        "value": "当前未启用"
+      }
+    ],
+    "footnote": "本站当前不销售用量积分或订阅。只有在音频量、质量目标、集成边界和复核流程明确后，才会确定团队落地价格。"
   }
 }

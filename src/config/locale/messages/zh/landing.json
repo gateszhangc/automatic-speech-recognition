@@ -37,24 +37,22 @@
           "title": "博客",
           "url": "/blog",
           "icon": "Newspaper"
+        },
+        {
+          "title": "价格",
+          "url": "/pricing",
+          "icon": "CircleDollarSign"
         }
       ]
     },
-    "buttons": [
-      {
-        "title": "规划 ASR",
-        "url": "/#planner",
-        "icon": "AudioLines",
-        "variant": "default"
-      }
-    ],
+    "buttons": [],
     "user_nav": {
       "show_name": false,
       "show_credits": false,
-      "show_sign_out": false,
+      "show_sign_out": true,
       "items": []
     },
-    "show_sign": false,
+    "show_sign": true,
     "show_theme": true,
     "show_locale": true
   },

@@ -1,8 +1,8 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 
-import { getThemePage } from '@/core/theme';
 import { getMetadata } from '@/shared/lib/seo';
-import { DynamicPage } from '@/shared/types/blocks/landing';
+
+import { PricingContent, PricingPageContent } from './pricing-content';
 
 export const revalidate = 3600;
 
@@ -20,8 +20,7 @@ export default async function PricingPage({
   setRequestLocale(locale);
 
   const t = await getTranslations('pages.pricing');
-  const page: DynamicPage = t.raw('page');
-  const Page = await getThemePage('dynamic-page');
+  const content = t.raw('content') as PricingPageContent;
 
-  return <Page locale={locale} page={page} />;
+  return <PricingContent content={content} />;
 }

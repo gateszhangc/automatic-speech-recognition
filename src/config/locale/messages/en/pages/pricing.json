@@ -1,59 +1,74 @@
 {
   "metadata": {
-    "title": "ASR Implementation Options",
-    "description": "Compare practical automatic speech recognition implementation paths for pilots, production workflows, and compliance-sensitive transcription."
+    "title": "Automatic Speech Recognition Pricing | Free Beta",
+    "description": "Compare automatic speech recognition pricing for the free ASR workflow planner and custom team rollout support. Start at $0 with Google sign-in."
   },
   "messages": {
     "current_plan": "Current option",
     "processing": "Processing"
   },
-  "page": {
-    "title": "ASR Implementation Options",
-    "show_sections": ["options", "cta"],
-    "sections": {
-      "options": {
-        "block": "features",
-        "id": "implementation-options",
-        "title": "Choose an ASR implementation path",
-        "description": "The right path depends on audio volume, latency, privacy, speaker complexity, and how much review your team can support.",
-        "items": [
-          {
-            "title": "Pilot benchmark",
-            "description": "Create a representative audio set, test word error rate, diarization, vocabulary, and review effort before selecting a model or vendor.",
-            "icon": "FlaskConical"
-          },
-          {
-            "title": "Workflow integration",
-            "description": "Connect ASR output to captions, CRM records, QA queues, search indexes, analytics, or knowledge management systems.",
-            "icon": "Workflow"
-          },
-          {
-            "title": "Compliance-ready pipeline",
-            "description": "Add retention policies, PII redaction, access control, audit logs, and human review rules for sensitive audio.",
-            "icon": "ShieldCheck"
-          }
-        ]
+  "content": {
+    "eyebrow": "Simple pricing",
+    "title": "Automatic speech recognition pricing",
+    "description": "Start with the workflow planner at no cost. Move to a scoped team rollout when your audio volume, accuracy target, integrations, and governance requirements are clear.",
+    "plans": [
+      {
+        "name": "Free Beta",
+        "description": "For individuals evaluating an ASR workflow before selecting a model, API, or vendor.",
+        "price": "$0",
+        "unit": "during beta",
+        "note": "No card required. Google sign-in is the only account method.",
+        "featuresTitle": "Included",
+        "features": [
+          "Interactive workflow sizing planner",
+          "Accuracy, latency, and review checkpoints",
+          "ASR implementation guide and documentation",
+          "English and Chinese interface"
+        ],
+        "button": {
+          "title": "Sign in free",
+          "url": "/sign-in?callbackUrl=/"
+        },
+        "featured": true
       },
-      "cta": {
-        "block": "cta",
-        "id": "pricing-cta",
-        "title": "Start with workflow sizing",
-        "description": "Use the ASR planner to estimate the recognition, review, and export requirements before committing to an implementation path.",
-        "buttons": [
-          {
-            "title": "Open Planner",
-            "url": "/#planner",
-            "icon": "SlidersHorizontal",
-            "variant": "default"
-          },
-          {
-            "title": "Contact",
-            "url": "mailto:support@automatic-speech-recognition.homes",
-            "icon": "Mail",
-            "variant": "outline"
-          }
-        ]
+      {
+        "name": "Team Rollout",
+        "description": "For teams turning a benchmark into a production transcription or voice workflow.",
+        "price": "Custom",
+        "unit": "scoped rollout",
+        "note": "Scope is based on audio volume, integrations, review effort, and security needs.",
+        "featuresTitle": "Planning scope",
+        "features": [
+          "Representative audio benchmark design",
+          "Model and vendor evaluation criteria",
+          "Integration and export architecture",
+          "Retention, privacy, and human review plan"
+        ],
+        "button": {
+          "title": "Size your workflow",
+          "url": "/#planner"
+        }
       }
-    }
+    ],
+    "factsTitle": "What the price means",
+    "facts": [
+      {
+        "label": "Free Beta charge",
+        "value": "$0"
+      },
+      {
+        "label": "Payment details",
+        "value": "Not required"
+      },
+      {
+        "label": "Team pricing",
+        "value": "Quoted after workflow sizing"
+      },
+      {
+        "label": "Paid checkout",
+        "value": "Not currently enabled"
+      }
+    ],
+    "footnote": "The site does not currently sell usage credits or subscriptions. Team rollout pricing is not presented until the workflow has a defined volume, quality target, integration boundary, and review process."
   }
 }

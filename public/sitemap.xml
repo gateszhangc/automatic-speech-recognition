@@ -1,15 +1,21 @@
-<?xml version='1.0' encoding='utf-8' standalone='yes'?>
+<?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://your-domain.com/</loc>
-    <lastmod>2025-11-15T10:00:00+00:00</lastmod>
-  </url>
-  <url>
-    <loc>https://your-domain.com/blog</loc>
-    <lastmod>2025-11-15T10:00:00+00:00</lastmod>
-  </url>
-  <url>
-    <loc>https://your-domain.com/showcases</loc>
-    <lastmod>2025-11-15T10:00:00+00:00</lastmod>
-  </url>
+  <url><loc>https://automatic-speech-recognition.homes/</loc><lastmod>2026-07-15</lastmod></url>
+  <url><loc>https://automatic-speech-recognition.homes/pricing</loc><lastmod>2026-07-15</lastmod></url>
+  <url><loc>https://automatic-speech-recognition.homes/blog</loc><lastmod>2026-07-15</lastmod></url>
+  <url><loc>https://automatic-speech-recognition.homes/blog/what-is-automatic-speech-recognition</loc><lastmod>2026-07-15</lastmod></url>
+  <url><loc>https://automatic-speech-recognition.homes/showcases</loc><lastmod>2026-07-15</lastmod></url>
+  <url><loc>https://automatic-speech-recognition.homes/docs</loc><lastmod>2026-07-15</lastmod></url>
+  <url><loc>https://automatic-speech-recognition.homes/updates</loc><lastmod>2026-07-15</lastmod></url>
+  <url><loc>https://automatic-speech-recognition.homes/privacy-policy</loc><lastmod>2026-07-15</lastmod></url>
+  <url><loc>https://automatic-speech-recognition.homes/terms-of-service</loc><lastmod>2026-07-15</lastmod></url>
+  <url><loc>https://automatic-speech-recognition.homes/zh</loc><lastmod>2026-07-15</lastmod></url>
+  <url><loc>https://automatic-speech-recognition.homes/zh/pricing</loc><lastmod>2026-07-15</lastmod></url>
+  <url><loc>https://automatic-speech-recognition.homes/zh/blog</loc><lastmod>2026-07-15</lastmod></url>
+  <url><loc>https://automatic-speech-recognition.homes/zh/blog/what-is-automatic-speech-recognition</loc><lastmod>2026-07-15</lastmod></url>
+  <url><loc>https://automatic-speech-recognition.homes/zh/showcases</loc><lastmod>2026-07-15</lastmod></url>
+  <url><loc>https://automatic-speech-recognition.homes/zh/docs</loc><lastmod>2026-07-15</lastmod></url>
+  <url><loc>https://automatic-speech-recognition.homes/zh/updates</loc><lastmod>2026-07-15</lastmod></url>
+  <url><loc>https://automatic-speech-recognition.homes/zh/privacy-policy</loc><lastmod>2026-07-15</lastmod></url>
+  <url><loc>https://automatic-speech-recognition.homes/zh/terms-of-service</loc><lastmod>2026-07-15</lastmod></url>
 </urlset>

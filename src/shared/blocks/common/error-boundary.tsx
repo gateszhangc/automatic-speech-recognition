@@ -48,6 +48,7 @@ export class ErrorBoundary extends Component<Props, State> {
             alt={envConfigs.app_name}
             width={80}
             height={80}
+            unoptimized={envConfigs.app_logo.toLowerCase().endsWith('.svg')}
           />
           <h1 className="text-2xl font-normal">Something went wrong</h1>
           <p className="text-muted-foreground">

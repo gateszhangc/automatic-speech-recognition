@@ -1,0 +1,39 @@
+---
+title: What is Automatic Speech Recognition?
+description: A practical guide to automatic speech recognition, speech-to-text workflows, diarization, confidence review, and ASR evaluation.
+created_at: 2026-07-12
+author_name: Automatic Speech Recognition
+author_image: /logo-asr.svg
+image: /imgs/asr/hero-dashboard.png
+---
+
+Automatic speech recognition, often shortened to ASR, converts spoken audio into text. In production, ASR is more than a model prediction. Useful systems also handle audio preparation, timestamps, speaker diarization, confidence scoring, review, privacy controls, and exports.
+
+## What ASR Produces
+
+A basic speech-to-text system returns a transcript. A production workflow may also produce:
+
+- Word-level or segment-level timestamps
+- Speaker labels for meetings, interviews, and calls
+- Captions and subtitle files
+- Confidence scores for quality review
+- Searchable transcript indexes
+- Structured events for analytics or compliance
+
+## Why Evaluation Needs Real Audio
+
+Demo clips are usually clean. Real audio contains noise, accents, crosstalk, low-quality microphones, domain vocabulary, names, acronyms, and code-switching. Evaluate ASR with samples that reflect the recordings your team actually handles.
+
+## Core ASR Metrics
+
+| Metric | Why it matters |
+| --- | --- |
+| Word error rate | Measures substitutions, deletions, and insertions |
+| Diarization quality | Shows whether speaker turns are usable |
+| Latency | Separates live caption needs from batch processing |
+| Review effort | Estimates human time needed to make output usable |
+| Export quality | Confirms transcripts work in downstream systems |
+
+## Practical Rollout
+
+Start with a small benchmark set, decide your review rules, test vocabulary handling, then connect ASR outputs to the workflow that will consume them. The best ASR choice is the one that produces usable text with the right review burden, privacy posture, and integration fit.

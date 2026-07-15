@@ -35,6 +35,7 @@ export function FeaturesAccordion({
   return (
     // overflow-x-hidden to prevent horizontal scroll
     <section
+      id={section.id}
       className={cn(
         'overflow-x-hidden py-16 md:py-24',
         section.className,

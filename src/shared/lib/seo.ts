@@ -51,6 +51,9 @@ export function getMetadata(
       options.canonicalUrl || '',
       locale || ''
     );
+    const languageAlternates = getLanguageAlternates(
+      options.canonicalUrl || '/'
+    );
 
     const title =
       passedMetadata.title || translatedMetadata.title || defaultMetadata.title;
@@ -88,6 +91,7 @@ export function getMetadata(
         defaultMetadata.keywords,
       alternates: {
         canonical: canonicalUrl,
+        languages: languageAlternates,
       },
 
       openGraph: {
@@ -113,6 +117,28 @@ export function getMetadata(
         follow: options.noIndex ? false : true,
       },
     };
+  };
+}
+
+export function getLanguageAlternates(pathname: string) {
+  let normalizedPath = pathname || '/';
+
+  if (normalizedPath.startsWith('http')) {
+    normalizedPath = new URL(normalizedPath).pathname;
+  }
+  if (!normalizedPath.startsWith('/')) {
+    normalizedPath = `/${normalizedPath}`;
+  }
+
+  const defaultUrl = `${envConfigs.app_url}${
+    normalizedPath === '/' ? '/' : normalizedPath
+  }`;
+  const localizedPath = normalizedPath === '/' ? '' : normalizedPath;
+
+  return {
+    en: defaultUrl,
+    zh: `${envConfigs.app_url}/zh${localizedPath}`,
+    'x-default': defaultUrl,
   };
 }
 

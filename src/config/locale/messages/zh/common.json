@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "title": "ShipAny 模板二",
-    "description": "ShipAny 是用于构建 AI SaaS 创业项目的 NextJS 脚手架。提供丰富模板和组件，助您快速上线产品。",
-    "keywords": "shipany, shipany-boilerplate, shipany-template-two-demo"
+    "title": "Automatic Speech Recognition | ASR 工作流规划器",
+    "description": "规划自动语音识别工作流，覆盖转写、字幕、说话人分离、音频搜索和合规型语音 AI 产品。",
+    "keywords": "Automatic speech recognition, 自动语音识别, ASR, speech to text, 音频转写, 说话人分离, 语音 AI, 字幕"
   },
   "sign": {
     "sign_in_title": "登录",

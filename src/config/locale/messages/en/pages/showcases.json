@@ -1,148 +1,66 @@
 {
   "metadata": {
-    "title": "Showcases",
-    "description": "Awesome projects built with ShipAny"
+    "title": "ASR Use Cases",
+    "description": "Explore practical automatic speech recognition use cases for meetings, contact centers, captions, compliance, and searchable audio."
   },
   "page": {
-    "title": "Showcases",
+    "title": "ASR Use Cases",
     "sections": {
       "showcases": {
         "id": "showcases",
-        "title": "AI SaaS Startups built with ShipAny",
-        "description": "Easy to use and fast to ship.",
+        "title": "Automatic speech recognition use cases",
+        "description": "Common ways teams convert speech into structured, searchable, and reviewable workflows.",
         "groups": [
           {
             "name": "all",
             "title": "All"
           },
           {
-            "name": "ai-chatbot",
-            "title": "AI Chatbot"
+            "name": "transcription",
+            "title": "Transcription"
           },
           {
-            "name": "ai-image",
-            "title": "AI Image"
+            "name": "realtime",
+            "title": "Realtime"
           },
           {
-            "name": "ai-video",
-            "title": "AI Video"
-          },
-          {
-            "name": "ai-audio",
-            "title": "AI Audio"
-          },
-          {
-            "name": "ai-music",
-            "title": "AI Music"
-          },
-          {
-            "name": "ai-coding",
-            "title": "AI Coding"
-          },
-          {
-            "name": "other",
-            "title": "Other"
+            "name": "compliance",
+            "title": "Compliance"
           }
         ],
         "items": [
           {
-            "title": "ThinkAny",
-            "description": "AI Search Engine",
-            "url": "https://thinkany.ai",
-            "target": "_blank",
+            "title": "Meeting transcription",
+            "description": "Turn meetings into speaker-labeled notes, decisions, and searchable archives.",
+            "url": "/#planner",
+            "target": "_self",
             "image": {
-              "src": "/imgs/cases/7.png",
-              "alt": "showcases"
+              "src": "/imgs/asr/hero-dashboard.png",
+              "alt": "Meeting transcription"
             },
-            "group": "ai-chatbot"
+            "group": "transcription"
           },
           {
-            "title": "HeyBeauty",
-            "description": "AI Virtual Try On",
-            "url": "https://heybeauty.ai",
-            "target": "_blank",
+            "title": "Live captions",
+            "description": "Support accessibility and event workflows with low-latency speech-to-text output.",
+            "url": "/#planner",
+            "target": "_self",
             "image": {
-              "src": "/imgs/cases/5.png",
-              "alt": "showcases"
+              "src": "/imgs/asr/hero-dashboard.png",
+              "alt": "Live captions"
             },
-            "group": "ai-image"
+            "group": "realtime"
           },
           {
-            "title": "AI Wallpaper",
-            "description": "AI Wallpaper Generator",
-            "url": "https://aiwallpaper.shop",
-            "target": "_blank",
+            "title": "Contact-center QA",
+            "description": "Review calls for quality signals, escalation topics, and compliance-sensitive language.",
+            "url": "/#planner",
+            "target": "_self",
             "image": {
-              "src": "/imgs/cases/1.png",
-              "alt": "showcases"
+              "src": "/imgs/asr/hero-dashboard.png",
+              "alt": "Contact center ASR"
             },
-            "group": "ai-image"
-          },
-          {
-            "title": "AI Cover",
-            "description": "AI Cover Generator",
-            "url": "https://aicover.design",
-            "target": "_blank",
-            "image": {
-              "src": "/imgs/cases/2.png",
-              "alt": "showcases"
-            },
-            "group": "ai-image"
-          },
-          {
-            "title": "GPTs Works",
-            "description": "GPTs Directory",
-            "url": "https://gpts.works",
-            "target": "_blank",
-            "image": {
-              "src": "/imgs/cases/3.png",
-              "alt": "showcases"
-            },
-            "group": "other"
-          },
-          {
-            "title": "Melodisco",
-            "description": "AI Music Player",
-            "url": "https://melodis.co",
-            "target": "_blank",
-            "image": {
-              "src": "/imgs/cases/4.png",
-              "alt": "showcases"
-            },
-            "group": "ai-music"
-          },
-          {
-            "title": "Pagen",
-            "description": "AI Landing Page Generator",
-            "url": "https://pagen.so",
-            "target": "_blank",
-            "image": {
-              "src": "/imgs/cases/6.png",
-              "alt": "showcases"
-            },
-            "group": "ai-coding"
-          },
-          {
-            "title": "SoraFM",
-            "description": "AI Video Generator",
-            "url": "https://sorafm.trys.ai",
-            "target": "_blank",
-            "image": {
-              "src": "/imgs/cases/8.png",
-              "alt": "showcases"
-            },
-            "group": "ai-video"
-          },
-          {
-            "title": "PodLM",
-            "description": "AI Podcast Generator",
-            "url": "https://podlm.ai",
-            "target": "_blank",
-            "image": {
-              "src": "/imgs/cases/9.png",
-              "alt": "showcases"
-            },
-            "group": "ai-audio"
+            "group": "compliance"
           }
         ]
       }

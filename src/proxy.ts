@@ -6,6 +6,36 @@ import { routing } from '@/core/i18n/config';
 
 const intlMiddleware = createIntlMiddleware(routing);
 
+const publicOnlyPagePrefixes = [
+  '/activity',
+  '/admin',
+  '/ai-image-generator',
+  '/ai-music-generator',
+  '/ai-video-generator',
+  '/auth-callback',
+  '/auth-popup',
+  '/chat',
+  '/no-permission',
+  '/settings',
+  '/sign-in',
+  '/sign-up',
+  '/verify-email',
+];
+
+const publicOnlyApiPrefixes = [
+  '/api/ai',
+  '/api/auth',
+  '/api/chat',
+  '/api/payment',
+  '/api/proxy',
+  '/api/storage',
+  '/api/user',
+];
+
+function matchesPrefix(pathname: string, prefix: string) {
+  return pathname === prefix || pathname.startsWith(`${prefix}/`);
+}
+
 export async function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
@@ -18,6 +48,25 @@ export async function proxy(request: NextRequest) {
   const pathWithoutLocale = isValidLocale
     ? pathname.slice(locale.length + 1)
     : pathname;
+
+  const publicSiteOnly = process.env.PUBLIC_SITE_ONLY !== 'false';
+  const isBlockedPage = publicOnlyPagePrefixes.some((prefix) =>
+    matchesPrefix(pathWithoutLocale, prefix)
+  );
+  const isBlockedApi = publicOnlyApiPrefixes.some((prefix) =>
+    matchesPrefix(pathname, prefix)
+  );
+
+  if (publicSiteOnly && (isBlockedPage || isBlockedApi)) {
+    return new NextResponse('Not Found', {
+      status: 404,
+      headers: {
+        'Cache-Control': 'no-store',
+        'Content-Type': 'text/plain; charset=utf-8',
+        'X-Robots-Tag': 'noindex, nofollow',
+      },
+    });
+  }
 
   // Only check authentication for admin routes
   if (
@@ -74,5 +123,5 @@ export async function proxy(request: NextRequest) {
 }
 
 export const config = {
-  matcher: '/((?!api|trpc|_next|_vercel|.*\\..*).*)',
+  matcher: '/((?!trpc|_next|_vercel|.*\\..*).*)',
 };

@@ -1,15 +1,15 @@
 {
   "metadata": {
-    "title": "博客",
-    "description": "阅读我们最新的产品功能、解决方案和更新内容。"
+    "title": "Automatic Speech Recognition 博客",
+    "description": "关于 ASR 评估、转写工作流、说话人分离、字幕和语音转文本运营的指南。"
   },
   "page": {
-    "title": "ShipAny 博客",
+    "title": "Automatic Speech Recognition 博客",
     "sections": {
       "blog": {
         "id": "blog",
-        "title": "博客",
-        "description": "阅读我们最新的产品功能、解决方案和更新内容。"
+        "title": "Automatic Speech Recognition 博客",
+        "description": "围绕 speech-to-text 工作流、ASR 质量复核、说话人分离和转写运营的实践笔记。"
       }
     }
   },

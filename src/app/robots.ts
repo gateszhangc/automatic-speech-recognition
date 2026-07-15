@@ -11,15 +11,18 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: [
         '/*?*q=',
-        '/privacy-policy',
-        '/terms-of-service',
         '/settings/*',
         '/activity/*',
         '/admin/*',
+        '/chat/*',
+        '/sign-in',
+        '/sign-up',
+        '/verify-email',
+        '/auth-*',
+        '/ai-*-generator',
         '/api/*',
       ],
     },
     sitemap: `${appUrl}/sitemap.xml`,
   };
 }
-

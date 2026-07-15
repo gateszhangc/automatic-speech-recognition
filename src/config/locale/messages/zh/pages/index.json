@@ -2,421 +2,264 @@
   "page": {
     "show_sections": [
       "hero",
-      "logos",
+      "planner",
       "introduce",
-      "benefits",
       "usage",
       "features",
       "stats",
-      "testimonials",
+      "benefits",
       "faq",
       "cta"
     ],
     "sections": {
       "hero": {
         "id": "hero",
-        "title": "一小时快速上线你的 AI 创业项目",
-        "highlight_text": "一小时",
-        "description": "ShipAny 是用于构建 AI SaaS 创业项目的 NextJS 项目模板。<br/>集成常用功能，快速上线你的产品。",
+        "title": "Automatic speech recognition for production voice workflows",
+        "highlight_text": "Automatic speech recognition",
+        "description": "把会议、电话、媒体和现场录音转成可搜索转写、字幕、说话人时间线和结构化数据，同时保留质量复核控制。",
         "announcement": {
-          "badge": "全新",
-          "title": "🎉 ShipAny 模板二已发布",
-          "url": "/pricing"
+          "title": "ASR 工作流规划器",
+          "url": "/#planner"
         },
-        "tip": "🎁 前 1000 名用户特价优惠",
+        "tip": "适合评估 speech-to-text、说话人分离、合规复核和转写搜索的团队。",
         "buttons": [
           {
-            "title": "立即开始",
-            "icon": "Zap",
-            "url": "/pricing",
+            "title": "规划 ASR",
+            "icon": "SlidersHorizontal",
+            "url": "/#planner",
             "target": "_self",
             "variant": "default"
           },
           {
-            "title": "阅读文档",
+            "title": "阅读 ASR 指南",
             "icon": "BookOpenText",
-            "url": "/docs",
-            "target": "_blank",
+            "url": "/blog/what-is-automatic-speech-recognition",
+            "target": "_self",
             "variant": "outline"
           }
         ],
-        "show_avatars": true,
-        "avatars_tip": "999+ 用户在使用 ShipAny 上站",
+        "show_avatars": false,
         "show_award": false,
         "image": {
-          "src": "/imgs/features/admin.png",
-          "alt": "hero",
-          "width": 1200,
-          "height": 800
-        },
-        "image_invert": {
-          "src": "/imgs/features/admin-dark.png",
-          "alt": "hero",
-          "width": 1200,
-          "height": 800
-        },
-        "background_image": {
-          "src": "/imgs/bg/tree.jpg",
-          "alt": "hero"
+          "src": "/imgs/asr/hero-dashboard.png",
+          "alt": "Automatic speech recognition dashboard with waveforms, speaker lanes, and transcript confidence review",
+          "width": 1792,
+          "height": 1024
         }
       },
-      "logos": {
-        "title": "ShipAny 使用以下技术栈构建",
-        "items": [
-          {
-            "title": "Next.js",
-            "image": {
-              "src": "/imgs/logos/nextjs.svg",
-              "alt": "Next.js"
-            }
-          },
-          {
-            "title": "React",
-            "image": {
-              "src": "/imgs/logos/react.svg",
-              "alt": "React"
-            }
-          },
-          {
-            "title": "TailwindCSS",
-            "image": {
-              "src": "/imgs/logos/tailwindcss.svg",
-              "alt": "TailwindCSS"
-            }
-          },
-          {
-            "title": "Shadcn/UI",
-            "image": {
-              "src": "/imgs/logos/shadcn.svg",
-              "alt": "Shadcn/UI"
-            }
-          },
-          {
-            "title": "Vercel",
-            "image": {
-              "src": "/imgs/logos/vercel.svg",
-              "alt": "Vercel"
-            }
-          }
-        ]
+      "planner": {
+        "block": "asr-planner",
+        "id": "planner",
+        "label": "交互规划器",
+        "title": "上线前估算你的 ASR 管线",
+        "description": "调整音频量、说话人数、语言、词汇和合规需求，快速判断自动语音识别系统需要支持的工作流。"
       },
       "introduce": {
         "block": "features-list",
-        "id": "introduce",
-        "title": "ShipAny 是什么？",
-        "label": "产品简介",
-        "description": "ShipAny 是专为 AI SaaS 创业项目打造的 NextJS 脚手架，包括丰富模板、组件及文档。",
+        "id": "capabilities",
+        "title": "自动语音识别不只是生成转写文本",
+        "label": "Capabilities",
+        "description": "生产级 ASR 工作流需要音频清理、语言路由、时间戳、说话人轮次、置信度、复核队列、导出和可搜索元数据。",
         "image": {
-          "src": "/imgs/features/landing-page.png",
-          "alt": "introduce"
+          "src": "/imgs/asr/hero-dashboard.png",
+          "alt": "ASR workflow interface"
         },
         "items": [
           {
-            "title": "开箱即用的模板",
-            "description": "从数十款生产级 AI SaaS 模板中选择，快速开启你的项目。",
-            "icon": "RiNextjsFill",
-            "image": {
-              "src": "/imgs/features/1.png",
-              "alt": "introduce"
-            }
+            "title": "语音转文本",
+            "description": "把长音频、会议、采访和录音转换为带时间戳的可编辑文本。",
+            "icon": "AudioLines"
           },
           {
-            "title": "基础设施搭建",
-            "description": "内置最佳实践，即刻拥有可扩展的基础设施。",
-            "icon": "RiDatabase2Line",
-            "image": {
-              "src": "/imgs/features/2.png",
-              "alt": "introduce"
-            }
+            "title": "说话人分离",
+            "description": "识别谁在什么时候说话，便于复核电话、圆桌和会议内容。",
+            "icon": "Users"
           },
           {
-            "title": "极速部署",
-            "description": "AI SaaS 产品快速上线，助力小时级交付。",
-            "icon": "RiCloudyFill",
-            "image": {
-              "src": "/imgs/features/3.png",
-              "alt": "introduce"
-            }
+            "title": "置信度复核",
+            "description": "把不确定词、噪声音频和领域词汇集中进入质量复核队列。",
+            "icon": "Gauge"
           },
           {
-            "title": "AI 集成",
-            "description": "通过内置的 AI SDK，轻松为你的项目集成 AI 能力。",
-            "icon": "RiRobot2Line",
-            "image": {
-              "src": "/imgs/features/4.png",
-              "alt": "introduce"
-            }
+            "title": "转写运营",
+            "description": "输出字幕、可搜索笔记、合规记录、摘要和下游工作流数据。",
+            "icon": "FileText"
+          }
+        ],
+        "className": "bg-muted"
+      },
+      "usage": {
+        "block": "features-step",
+        "id": "workflows",
+        "label": "Workflow",
+        "title": "实用的 ASR 上线路径",
+        "description": "从原始录音走到可靠转写运营，需要可度量的复核门槛。",
+        "items": [
+          {
+            "title": "标准化音频",
+            "description": "识别前统一格式、声道、采样率和噪声处理。",
+            "icon": "SlidersHorizontal"
+          },
+          {
+            "title": "识别与对齐",
+            "description": "运行带时间戳、标点、词汇提示和语言路由的 ASR。",
+            "icon": "AudioWaveform"
+          },
+          {
+            "title": "复核异常",
+            "description": "优先处理低置信度词、说话人重叠和合规敏感片段。",
+            "icon": "ListChecks"
+          },
+          {
+            "title": "发布结果",
+            "description": "把转写、字幕、搜索索引、QA 记录和结构化事件发送到业务系统。",
+            "icon": "Send"
+          }
+        ],
+        "className": "bg-background"
+      },
+      "features": {
+        "block": "features",
+        "id": "evaluation",
+        "title": "用运营指标评估 ASR",
+        "description": "准确率重要，但可用的语音识别还依赖速度、复核成本、可靠性、隐私控制和导出质量。",
+        "items": [
+          {
+            "title": "词错误率",
+            "description": "用真实代表性音频衡量替换、删除和插入错误。",
+            "icon": "Percent"
+          },
+          {
+            "title": "延迟预算",
+            "description": "区分实时字幕需求与批量转写吞吐和排队时间。",
+            "icon": "Timer"
+          },
+          {
+            "title": "说话人质量",
+            "description": "跟踪说话人纯度、轮次边界、重叠语音和标签质量。",
+            "icon": "UsersRound"
+          },
+          {
+            "title": "领域词汇",
+            "description": "测试姓名、缩写、产品词、医疗、法律、技术或区域表达。",
+            "icon": "BookMarked"
+          },
+          {
+            "title": "复核效率",
+            "description": "量化人工解决置信度和合规异常所需的时间。",
+            "icon": "ClipboardCheck"
+          },
+          {
+            "title": "数据控制",
+            "description": "检查留存、脱敏、访问日志、存储位置和导出权限。",
+            "icon": "ShieldCheck"
+          }
+        ]
+      },
+      "stats": {
+        "block": "stats",
+        "id": "benchmarks",
+        "title": "ASR 规划基准",
+        "description": "比较供应商、开源模型和内部语音管线时，可以先确认这些检查点。",
+        "items": [
+          {
+            "title": "3",
+            "description": "类音频样本：干净、嘈杂和多人重叠"
+          },
+          {
+            "title": "5+",
+            "description": "每分钟代表音频测试的领域词数量"
+          },
+          {
+            "title": "2",
+            "description": "类输出验证：可读转写和机器可用结构"
           }
         ],
         "className": "bg-muted"
       },
       "benefits": {
         "block": "features-accordion",
-        "id": "benefits",
-        "title": "为何选择 ShipAny",
-        "label": "产品优势",
-        "description": "你获得一切 AI 创业所需——从开箱即用的模板到专业技术支持。",
+        "id": "use-cases",
+        "title": "自动语音识别带来价值的场景",
+        "description": "ASR 帮助团队把录音对话和口语内容变成可搜索知识、更快 QA 和可访问媒体。",
         "items": [
           {
-            "title": "全栈解决方案",
-            "description": "基于 Next.js，集成认证、支付、AI，一站式开箱即用。",
-            "icon": "RiNextjsFill",
+            "title": "会议与采访",
+            "description": "从长对话中记录决策、说话人、行动项和可搜索笔记。",
+            "icon": "MessagesSquare",
             "image": {
-              "src": "/imgs/features/user-billing.png",
-              "alt": "benefits"
+              "src": "/imgs/asr/hero-dashboard.png",
+              "alt": "Meeting transcription workflow"
             }
           },
           {
-            "title": "丰富模板库",
-            "description": "多样的 AI SaaS 模板，点击即用，涵盖聊天、图像生成等多场景。",
-            "icon": "RiClapperboardAiLine",
+            "title": "呼叫中心",
+            "description": "分析通话中的 QA、培训、合规短语、情绪信号和升级主题。",
+            "icon": "Headphones",
             "image": {
-              "src": "/imgs/features/admin-settings.png",
-              "alt": "benefits"
+              "src": "/imgs/asr/hero-dashboard.png",
+              "alt": "Call transcription workflow"
             }
           },
           {
-            "title": "专属技术指导",
-            "description": "享受专属技术支持与开发者社区，为你的成功保驾护航。",
-            "icon": "RiCodeFill",
+            "title": "媒体与字幕",
+            "description": "为音视频库生成带时间戳字幕、剪辑、归档和转写搜索。",
+            "icon": "Captions",
             "image": {
-              "src": "/imgs/features/landing-page.png",
-              "alt": "benefits"
-            }
-          }
-        ]
-      },
-      "usage": {
-        "block": "features-step",
-        "id": "usage",
-        "title": "三步使用 ShipAny 极速上线",
-        "description": "只需三步，快速开启你的 AI SaaS 创业之路：",
-        "image": {
-          "src": "/imgs/features/1.png",
-          "alt": "usage"
-        },
-        "image_position": "left",
-        "text_align": "center",
-        "items": [
-          {
-            "title": "获取 ShipAny",
-            "description": "一次性购买 ShipAny，查收邮件获取代码与文档。",
-            "image": {
-              "src": "/imgs/features/5.png",
-              "alt": "usage"
-            }
-          },
-          {
-            "title": "启动你的项目",
-            "description": "阅读说明文档，克隆 ShipAny 代码，开始开发你的 AI SaaS 项目。",
-            "image": {
-              "src": "/imgs/features/6.png",
-              "alt": "usage"
-            }
-          },
-          {
-            "title": "个性化定制",
-            "description": "根据需求修改模板内容和数据，配置专属 AI 能力。",
-            "image": {
-              "src": "/imgs/features/7.png",
-              "alt": "usage"
-            }
-          },
-          {
-            "title": "部署上线",
-            "description": "简单几步将你的项目推向生产环境，立刻为客户提供服务。",
-            "image": {
-              "src": "/imgs/features/8.png",
-              "alt": "usage"
-            }
-          }
-        ],
-        "className": "bg-muted"
-      },
-      "features": {
-        "id": "features",
-        "title": "ShipAny 核心功能",
-        "description": "一切你需要的工具，助力 AI SaaS 项目高效上线。",
-        "items": [
-          {
-            "title": "Next.js 项目模板",
-            "description": "生产就绪、支持 SEO 与多语言的 Next.js 脚手架。",
-            "icon": "RiNextjsFill"
-          },
-          {
-            "title": "身份认证与支付",
-            "description": "集成谷歌 OAuth、一键登录，以及 Stripe 支付。",
-            "icon": "RiKey2Fill"
-          },
-          {
-            "title": "数据基础设施",
-            "description": "内置 Supabase，稳定可靠的数据存储。",
-            "icon": "RiDatabase2Line"
-          },
-          {
-            "title": "一键部署",
-            "description": "自动化部署到 Vercel 或 Cloudflare，极速上线。",
-            "icon": "RiCloudy2Fill"
-          },
-          {
-            "title": "商业分析",
-            "description": "集成 Google Analytics、Search Console，助力业务增长。",
-            "icon": "RiBarChart2Line"
-          },
-          {
-            "title": "AI 原生基础设施",
-            "description": "预置 AI 集成、积分系统和 API 售卖能力。",
-            "icon": "RiRobot2Line"
-          }
-        ]
-      },
-      "stats": {
-        "id": "stats",
-        "title": "用户喜爱 ShipAny",
-        "description": "因其易用且上线飞快。",
-        "items": [
-          {
-            "title": "999+",
-            "description": "位用户"
-          },
-          {
-            "title": "200+",
-            "description": "组件块"
-          },
-          {
-            "title": "50+",
-            "description": "专业模板"
-          }
-        ],
-        "className": "bg-muted"
-      },
-      "testimonials": {
-        "id": "testimonials",
-        "title": "用户对 ShipAny 的评价",
-        "description": "听听开发者与创始人用 ShipAny 快速上线 AI 创业项目的故事。",
-        "items": [
-          {
-            "name": "David Chen",
-            "role": "AIWallpaper.shop 创始人",
-            "quote": "ShipAny 为我们节省了数月开发时间。2 天上线 AI 壁纸业务，一周内就收到了第一笔付费订单！",
-            "image": {
-              "src": "/imgs/avatars/1.png",
-              "alt": "david"
-            }
-          },
-          {
-            "name": "Rachel Kim",
-            "role": "HeyBeauty.ai CTO",
-            "quote": "内置 AI 基础设施颠覆了开发体验，无需担心架构，只需专注核心功能，极快落地。",
-            "image": {
-              "src": "/imgs/avatars/2.png",
-              "alt": "rachel"
-            }
-          },
-          {
-            "name": "Marcus Thompson",
-            "role": "独立开发者",
-            "quote": "作为独立开发者，ShipAny 满足了全部需求——认证、支付、AI 集成、美观界面，一个周末上线 SaaS！",
-            "image": {
-              "src": "/imgs/avatars/3.png",
-              "alt": "marcus"
-            }
-          },
-          {
-            "name": "Sofia Garcia",
-            "role": "Melodisco CEO",
-            "quote": "模板高度可定制且生产级。我们几小时内搭建出了 AI 音乐平台，上市周期大大缩短！",
-            "image": {
-              "src": "/imgs/avatars/4.png",
-              "alt": "sofia"
-            }
-          },
-          {
-            "name": "James Wilson",
-            "role": "GPTs.works 技术负责人",
-            "quote": "ShipAny 基础设施极其稳定。我们从 0 到 1 万用户，无需关心后端维护，是最棒的 AI 创业投资。",
-            "image": {
-              "src": "/imgs/avatars/5.png",
-              "alt": "james"
-            }
-          },
-          {
-            "name": "Anna Zhang",
-            "role": "创业者",
-            "quote": "从想法到上线，仅用 3 天！ShipAny 模板和部署工具让我们极快验证 AI 商业创意。",
-            "image": {
-              "src": "/imgs/avatars/6.png",
-              "alt": "anna"
+              "src": "/imgs/asr/hero-dashboard.png",
+              "alt": "Caption and media workflow"
             }
           }
         ]
       },
       "faq": {
         "id": "faq",
-        "title": "关于 ShipAny 的常见问题",
-        "description": "还有其他问题？欢迎加入 Discord 或发邮件联系我们。",
+        "title": "Automatic speech recognition FAQ",
+        "description": "生产级 ASR 系统常见规划问题。",
         "items": [
           {
-            "question": "ShipAny 是什么？怎么帮到我？",
-            "answer": "ShipAny 是专为 AI SaaS 创业设计的 NextJS 全套脚手架，内含开箱即用的模板、基础设施搭建和部署工具，让你数小时内上线 AI 产品。"
+            "question": "什么是 automatic speech recognition？",
+            "answer": "Automatic speech recognition 是把语音音频转换为文本的过程。生产环境通常还包含音频标准化、语言处理、时间戳、说话人分离、置信度、复核和导出工作流。"
           },
           {
-            "question": "使用 ShipAny 需要很高的技术水平吗？",
-            "answer": "有基础编程知识即可上手。ShipAny 面向开发者友好，详细文档和模板让初学者也能轻松起步，不需深厚 AI 或云计算背景。"
+            "question": "ASR 和 speech-to-text 一样吗？",
+            "answer": "Speech-to-text 是核心输出。ASR 通常指更完整的识别系统，包括时间、说话人、词汇、置信度和下游格式处理。"
           },
           {
-            "question": "ShipAny 支持哪些类型的 AI SaaS 项目？",
-            "answer": "ShipAny 支持内容生成、数据分析、AI 聊天机器人、图片/内容生成器等多种主流 AI 应用场景。"
+            "question": "如何评估 ASR 准确率？",
+            "answer": "使用代表性音频样本，衡量词错误率，检查说话人标签，测试领域词汇，并记录让转写可用所需的人工复核时间。"
           },
           {
-            "question": "用 ShipAny 一般多久能上线？",
-            "answer": "借助 ShipAny，可在数小时内拿到产品原型并上线生产环境，预配置的一键部署大幅缩短开发周期。"
+            "question": "我需要说话人分离吗？",
+            "answer": "如果音频包含多人，并且转写需要显示谁在什么时候说话，就需要说话人分离。会议、采访、圆桌、电话和合规复核尤其常见。"
           },
           {
-            "question": "ShipAny 的基础设施包括哪些内容？",
-            "answer": "包含认证、数据库、API 集成、支付、云端部署等全栈解决方案，全部遵循业界最佳实践预配置。"
-          },
-          {
-            "question": "模板是否支持定制自己的品牌？",
-            "answer": "当然支持！所有模板均可自定义设计、功能和品牌，既保持基础架构稳定，又能满足个性扩展需求。"
-          }
-        ]
-      },
-      "cta": {
-        "id": "cta",
-        "title": "发布你的第一个 AI SaaS 项目",
-        "description": "从这里出发，用 ShipAny 极速交付。",
-        "buttons": [
-          {
-            "title": "获取 ShipAny",
-            "url": "https://shipany.ai",
-            "target": "_blank",
-            "icon": "Zap"
-          },
-          {
-            "title": "阅读文档",
-            "url": "/docs",
-            "target": "_blank",
-            "variant": "outline",
-            "icon": "BookOpenText"
+            "question": "真实工作流中的 ASR 难点是什么？",
+            "answer": "噪声、口音、重叠语音、领域术语、混合语言、隐私要求和延迟预期，往往和模型准确率同样重要。"
           }
         ],
-        "className": "bg-muted"
+        "tip": "在决定供应商、模型或部署路径前，先构建一组小型真实音频基准。"
       },
-      "subscribe": {
-        "id": "subscribe",
-        "title": "订阅我们的邮件通知",
-        "description": "获取 ShipAny 最新资讯与产品动态。",
-        "submit": {
-          "input": {
-            "placeholder": "输入邮箱"
+      "cta": {
+        "block": "cta",
+        "id": "contact",
+        "title": "建立更清晰的 ASR 方案",
+        "description": "使用上方规划器，用真实音频验证，并把复核、隐私和输出质量放进同一个决策流程。",
+        "buttons": [
+          {
+            "title": "打开规划器",
+            "url": "/#planner",
+            "icon": "SlidersHorizontal",
+            "variant": "default"
           },
-          "button": {
-            "title": "订阅"
-          },
-          "action": "/api/subscribe"
-        },
-        "className": "bg-muted"
+          {
+            "title": "联系",
+            "url": "mailto:support@automatic-speech-recognition.homes",
+            "icon": "Mail",
+            "variant": "outline"
+          }
+        ],
+        "className": "bg-background"
       }
     }
   }

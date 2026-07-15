@@ -1,14 +1,14 @@
 {
   "metadata": {
-    "title": "更新日志",
-    "description": "查看产品更新日志，了解产品最新功能和改进。"
+    "title": "站点更新",
+    "description": "Automatic Speech Recognition 规划中心的更新记录。"
   },
   "page": {
     "sections": {
       "updates": {
         "id": "updates",
-        "title": "更新日志",
-        "description": "查看产品更新日志，了解产品最新功能和改进。"
+        "title": "站点更新",
+        "description": "ASR 规划器、指南和工作流资源的更新记录。"
       }
     }
   }

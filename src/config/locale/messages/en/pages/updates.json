@@ -1,14 +1,14 @@
 {
   "metadata": {
-    "title": "Update Logs",
-    "description": "View product update logs, including latest features and improvements."
+    "title": "Site Updates",
+    "description": "Updates for the Automatic Speech Recognition planning hub."
   },
   "page": {
     "sections": {
       "updates": {
         "id": "updates",
-        "title": "Update Logs",
-        "description": "View product update logs, including latest features and improvements."
+        "title": "Site Updates",
+        "description": "Notes on the ASR planner, guides, and workflow resources."
       }
     }
   }

@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "title": "ShipAny Template Two",
-    "description": "ShipAny is a NextJS boilerplate for building AI SaaS startups. Ship Fast with a variety of templates and components.",
-    "keywords": "shipany, shipany-boilerplate, shipany-template-two-demo"
+    "title": "Automatic Speech Recognition | ASR Workflow Planner",
+    "description": "Plan automatic speech recognition workflows for transcription, captions, speaker diarization, searchable audio, and compliant voice AI products.",
+    "keywords": "automatic speech recognition, ASR, speech to text, audio transcription, speaker diarization, voice AI, captions, transcript search"
   },
   "sign": {
     "sign_in_title": "Sign In",

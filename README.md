@@ -1,19 +1,28 @@
-# ShipAny Template Two
+# Automatic Speech Recognition
 
-## Getting Started
+Keyword-focused website for `automatic-speech-recognition.homes`.
 
-read [ShipAny Document](https://shipany.ai/docs/quick-start) to start your AI SaaS project.
+## Local Development
 
-## Buy Templates
+```bash
+npx -y pnpm@10 install
+DATABASE_PROVIDER=sqlite \
+DATABASE_URL=file:data/local.db \
+AUTH_SECRET=local-dev-secret \
+NEXT_PUBLIC_APP_URL=http://127.0.0.1:3007 \
+AUTH_URL=http://127.0.0.1:3007 \
+node node_modules/next/dist/bin/next dev --turbopack -p 3007 -H 0.0.0.0
+```
 
-check [ShipAny Templates](https://shipany.ai/templates) to buy Business Templates.
+Open `http://127.0.0.1:3007/`.
 
-## Feedback
+## Checks
 
-submit your feedbacks on [Github Issues](https://github.com/shipanyai/shipany-template-two/issues)
+```bash
+npx -y pnpm@10 lint
+npx -y pnpm@10 build
+```
 
-## LICENSE
+## License
 
-!!! Please do not publicly release ShipAny's Code. Illegal use will be prosecuted
-
-[ShipAny LICENSE](./LICENSE)
+See [LICENSE](./LICENSE).

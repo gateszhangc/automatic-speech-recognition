@@ -3,6 +3,7 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 
 import { getThemePage } from '@/core/theme';
 import { envConfigs } from '@/config';
+import { getLanguageAlternates } from '@/shared/lib/seo';
 import { getLocalPage } from '@/shared/models/post';
 
 export const revalidate = 3600;
@@ -51,6 +52,7 @@ export async function generateMetadata({
       description,
       alternates: {
         canonical: canonicalUrl,
+        languages: getLanguageAlternates(`/${staticPageSlug}`),
       },
     };
   }
@@ -75,6 +77,7 @@ export async function generateMetadata({
       description,
       alternates: {
         canonical: canonicalUrl,
+        languages: getLanguageAlternates(`/${staticPageSlug}`),
       },
     };
   }
@@ -90,6 +93,7 @@ export async function generateMetadata({
     description,
     alternates: {
       canonical: canonicalUrl,
+      languages: getLanguageAlternates(`/${staticPageSlug}`),
     },
   };
 }

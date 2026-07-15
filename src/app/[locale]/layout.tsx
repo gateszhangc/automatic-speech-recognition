@@ -6,10 +6,9 @@ import { hasLocale, NextIntlClientProvider } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
 import NextTopLoader from 'nextjs-toploader';
 
-import { envConfigs } from '@/config';
-import { locales } from '@/config/locale';
 import { routing } from '@/core/i18n/config';
 import { ThemeProvider } from '@/core/theme/provider';
+import { envConfigs } from '@/config';
 import { UtmCapture } from '@/shared/blocks/common/utm-capture';
 import { Toaster } from '@/shared/components/ui/sonner';
 import { AppContextProvider } from '@/shared/contexts/app';
@@ -60,8 +59,7 @@ export default async function LocaleLayout({
 
   const isProduction = process.env.NODE_ENV === 'production';
   const isDebug = process.env.NEXT_PUBLIC_DEBUG === 'true';
-
-  const appUrl = envConfigs.app_url || '';
+  const publicSiteOnly = envConfigs.public_site_only !== 'false';
 
   let adsMetaTags = null;
   let adsHeadScripts = null;
@@ -79,7 +77,7 @@ export default async function LocaleLayout({
   let customerServiceHeadScripts = null;
   let customerServiceBodyScripts = null;
 
-  if (isProduction || isDebug) {
+  if (!publicSiteOnly && (isProduction || isDebug)) {
     const configs = await getAllConfigs();
 
     const [adsService, analyticsService, affiliateService, customerService] =
@@ -118,17 +116,6 @@ export default async function LocaleLayout({
         <link rel="alternate icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        {locales
-          ? locales.map((loc) => (
-              <link
-                key={loc}
-                rel="alternate"
-                hrefLang={loc}
-                href={`${appUrl}${loc === 'en' ? '' : `/${loc}`}`}
-              />
-            ))
-          : null}
-
         {adsMetaTags}
         {adsHeadScripts}
 
@@ -143,7 +130,7 @@ export default async function LocaleLayout({
       </head>
       <body suppressHydrationWarning className="overflow-x-hidden">
         <NextTopLoader
-          color="#6466F1"
+          color="#0f766e"
           initialPosition={0.08}
           crawlSpeed={200}
           height={3}

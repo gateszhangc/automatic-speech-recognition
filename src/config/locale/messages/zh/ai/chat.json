@@ -2,10 +2,10 @@
   "sidebar": {
     "header": {
       "brand": {
-        "title": "ShipAny Chat",
+        "title": "ASR Chat",
         "logo": {
-          "src": "/logo.png",
-          "alt": "ShipAny Chat"
+          "src": "/logo-asr.svg",
+          "alt": "ASR Chat"
         },
         "url": "/chat"
       },
@@ -60,25 +60,25 @@
           },
           {
             "title": "GitHub",
-            "url": "https://github.com/your-app-name",
+            "url": "https://automatic-speech-recognition.homes",
             "icon": "Github",
             "target": "_blank"
           },
           {
             "title": "推特",
-            "url": "https://twitter.com/your-app-name",
+            "url": "https://automatic-speech-recognition.homes",
             "icon": "RiTwitterXFill",
             "target": "_blank"
           },
           {
             "title": "Discord",
-            "url": "https://discord.gg/your-app-name",
+            "url": "https://automatic-speech-recognition.homes",
             "icon": "RiDiscordFill",
             "target": "_blank"
           },
           {
             "title": "邮箱",
-            "url": "mailto:support@your-domain.com",
+            "url": "mailto:support@automatic-speech-recognition.homes",
             "icon": "Mail",
             "target": "_blank"
           }

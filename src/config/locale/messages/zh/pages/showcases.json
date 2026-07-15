@@ -1,148 +1,66 @@
 {
   "metadata": {
-    "title": "案例展示",
-    "description": "用 ShipAny 打造的精彩项目"
+    "title": "ASR 用例",
+    "description": "了解自动语音识别在会议、呼叫中心、字幕、合规和可搜索音频中的实践用例。"
   },
   "page": {
-    "title": "案例展示",
+    "title": "ASR 用例",
     "sections": {
       "showcases": {
         "id": "showcases",
-        "title": "用 ShipAny 构建的 AI SaaS 创业项目",
-        "description": "简单、快速、高效。",
+        "title": "Automatic speech recognition 用例",
+        "description": "团队把语音转换成结构化、可搜索、可复核工作流的常见方式。",
         "groups": [
           {
             "name": "all",
-            "title": "所有项目"
+            "title": "全部"
           },
           {
-            "name": "ai-chatbot",
-            "title": "AI 聊天机器人"
+            "name": "transcription",
+            "title": "转写"
           },
           {
-            "name": "ai-image",
-            "title": "AI 图片"
+            "name": "realtime",
+            "title": "实时"
           },
           {
-            "name": "ai-video",
-            "title": "AI 视频"
-          },
-          {
-            "name": "ai-audio",
-            "title": "AI 音频"
-          },
-          {
-            "name": "ai-music",
-            "title": "AI 音乐"
-          },
-          {
-            "name": "ai-coding",
-            "title": "AI 编程"
-          },
-          {
-            "name": "other",
-            "title": "其他"
+            "name": "compliance",
+            "title": "合规"
           }
         ],
         "items": [
           {
-            "title": "ThinkAny",
-            "description": "AI 搜索引擎",
-            "url": "https://thinkany.ai",
-            "target": "_blank",
+            "title": "会议转写",
+            "description": "把会议转换成带说话人标签的笔记、决策和可搜索归档。",
+            "url": "/#planner",
+            "target": "_self",
             "image": {
-              "src": "/imgs/cases/7.png",
-              "alt": "案例展示"
+              "src": "/imgs/asr/hero-dashboard.png",
+              "alt": "Meeting transcription"
             },
-            "group": "ai-chatbot"
+            "group": "transcription"
           },
           {
-            "title": "HeyBeauty",
-            "description": "AI 虚拟试妆",
-            "url": "https://heybeauty.ai",
-            "target": "_blank",
+            "title": "实时字幕",
+            "description": "用低延迟 speech-to-text 输出支持可访问性和活动场景。",
+            "url": "/#planner",
+            "target": "_self",
             "image": {
-              "src": "/imgs/cases/5.png",
-              "alt": "案例展示"
+              "src": "/imgs/asr/hero-dashboard.png",
+              "alt": "Live captions"
             },
-            "group": "ai-image"
+            "group": "realtime"
           },
           {
-            "title": "AI Wallpaper",
-            "description": "AI 壁纸生成器",
-            "url": "https://aiwallpaper.shop",
-            "target": "_blank",
+            "title": "呼叫中心 QA",
+            "description": "复核通话质量信号、升级主题和合规敏感表述。",
+            "url": "/#planner",
+            "target": "_self",
             "image": {
-              "src": "/imgs/cases/1.png",
-              "alt": "案例展示"
+              "src": "/imgs/asr/hero-dashboard.png",
+              "alt": "Contact center ASR"
             },
-            "group": "ai-image"
-          },
-          {
-            "title": "AI Cover",
-            "description": "AI 封面生成器",
-            "url": "https://aicover.design",
-            "target": "_blank",
-            "image": {
-              "src": "/imgs/cases/2.png",
-              "alt": "案例展示"
-            },
-            "group": "ai-image"
-          },
-          {
-            "title": "GPTs Works",
-            "description": "GPTs 导航",
-            "url": "https://gpts.works",
-            "target": "_blank",
-            "image": {
-              "src": "/imgs/cases/3.png",
-              "alt": "案例展示"
-            },
-            "group": "other"
-          },
-          {
-            "title": "Melodisco",
-            "description": "AI 音乐播放器",
-            "url": "https://melodis.co",
-            "target": "_blank",
-            "image": {
-              "src": "/imgs/cases/4.png",
-              "alt": "案例展示"
-            },
-            "group": "ai-music"
-          },
-          {
-            "title": "Pagen",
-            "description": "AI 落地页生成器",
-            "url": "https://pagen.so",
-            "target": "_blank",
-            "image": {
-              "src": "/imgs/cases/6.png",
-              "alt": "案例展示"
-            },
-            "group": "ai-coding"
-          },
-          {
-            "title": "SoraFM",
-            "description": "AI 视频生成器",
-            "url": "https://sorafm.trys.ai",
-            "target": "_blank",
-            "image": {
-              "src": "/imgs/cases/8.png",
-              "alt": "案例展示"
-            },
-            "group": "ai-video"
-          },
-          {
-            "title": "PodLM",
-            "description": "AI 播客生成器",
-            "url": "https://podlm.ai",
-            "target": "_blank",
-            "image": {
-              "src": "/imgs/cases/9.png",
-              "alt": "案例展示"
-            },
-            "group": "ai-audio"
+            "group": "compliance"
           }
         ]
       }

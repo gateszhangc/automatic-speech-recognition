@@ -1,7 +1,17 @@
 ---
-title: Introduction
+title: ASR Planning Docs
 ---
 
-## What is YourAppName?
+## Automatic speech recognition planning
 
-YourAppName is an AI SaaS development framework based on NextJS, with built-in rich components and AI SDKs to help you quickly complete AI SaaS project development.
+Use this site to reason about ASR workflows before selecting a model, vendor, or deployment path.
+
+Start with representative audio, measure transcription quality, estimate review load, and confirm privacy requirements before moving to production.
+
+## Core checklist
+
+1. Collect clean, noisy, accented, and overlapping speech samples.
+2. Test word error rate, timestamps, punctuation, and speaker diarization.
+3. Add domain vocabulary for names, acronyms, products, and technical phrases.
+4. Define review rules for low-confidence words and sensitive content.
+5. Validate exports for captions, search, QA, analytics, and records.

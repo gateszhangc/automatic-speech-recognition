@@ -1,15 +1,15 @@
 {
   "metadata": {
-    "title": "Blog",
-    "description": "Read latest product features, solutions, and updates."
+    "title": "Automatic Speech Recognition Blog",
+    "description": "Guides for ASR evaluation, transcription workflows, diarization, captions, and speech-to-text operations."
   },
   "page": {
-    "title": "ShipAny Blog",
+    "title": "Automatic Speech Recognition Blog",
     "sections": {
       "blog": {
         "id": "blog",
-        "title": "Blog",
-        "description": "Read latest product features, solutions, and updates."
+        "title": "Automatic Speech Recognition Blog",
+        "description": "Practical notes on speech-to-text workflows, ASR quality review, speaker diarization, and transcript operations."
       }
     }
   },

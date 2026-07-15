@@ -6,31 +6,19 @@ import { routing } from '@/core/i18n/config';
 
 const intlMiddleware = createIntlMiddleware(routing);
 
-const publicOnlyPagePrefixes = [
-  '/activity',
-  '/admin',
-  '/ai-image-generator',
-  '/ai-music-generator',
-  '/ai-video-generator',
-  '/auth-callback',
-  '/auth-popup',
-  '/chat',
-  '/no-permission',
-  '/settings',
-  '/sign-in',
-  '/sign-up',
-  '/verify-email',
-];
+const publicOnlyPagePaths = new Set([
+  '/',
+  '/blog',
+  '/blog/what-is-automatic-speech-recognition',
+  '/docs',
+  '/pricing',
+  '/privacy-policy',
+  '/showcases',
+  '/terms-of-service',
+  '/updates',
+]);
 
-const publicOnlyApiPrefixes = [
-  '/api/ai',
-  '/api/auth',
-  '/api/chat',
-  '/api/payment',
-  '/api/proxy',
-  '/api/storage',
-  '/api/user',
-];
+const publicOnlyApiPrefixes = ['/api/docs/search'];
 
 function matchesPrefix(pathname: string, prefix: string) {
   return pathname === prefix || pathname.startsWith(`${prefix}/`);
@@ -39,25 +27,30 @@ function matchesPrefix(pathname: string, prefix: string) {
 export async function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
-  // Handle internationalization first
-  const intlResponse = intlMiddleware(request);
-
   // Extract locale from pathname
   const locale = pathname.split('/')[1];
   const isValidLocale = routing.locales.includes(locale as any);
   const pathWithoutLocale = isValidLocale
     ? pathname.slice(locale.length + 1)
     : pathname;
+  const normalizedPath =
+    pathWithoutLocale === ''
+      ? '/'
+      : pathWithoutLocale.length > 1
+        ? pathWithoutLocale.replace(/\/$/, '')
+        : pathWithoutLocale;
 
   const publicSiteOnly = process.env.PUBLIC_SITE_ONLY !== 'false';
-  const isBlockedPage = publicOnlyPagePrefixes.some((prefix) =>
-    matchesPrefix(pathWithoutLocale, prefix)
-  );
-  const isBlockedApi = publicOnlyApiPrefixes.some((prefix) =>
+  const isApi = pathname === '/api' || pathname.startsWith('/api/');
+  const isAllowedPublicApi = publicOnlyApiPrefixes.some((prefix) =>
     matchesPrefix(pathname, prefix)
   );
+  const isAllowedPublicPage = publicOnlyPagePaths.has(normalizedPath);
 
-  if (publicSiteOnly && (isBlockedPage || isBlockedApi)) {
+  if (
+    publicSiteOnly &&
+    ((isApi && !isAllowedPublicApi) || (!isApi && !isAllowedPublicPage))
+  ) {
     return new NextResponse('Not Found', {
       status: 404,
       headers: {
@@ -67,6 +60,12 @@ export async function proxy(request: NextRequest) {
       },
     });
   }
+
+  if (isApi) {
+    return NextResponse.next();
+  }
+
+  const intlResponse = intlMiddleware(request);
 
   // Only check authentication for admin routes
   if (
